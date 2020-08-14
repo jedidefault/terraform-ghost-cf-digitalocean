@@ -1,0 +1,10 @@
+// CREATE API KEY - https://cloud.digitalocean.com/account/api/
+digitalocean_token = "YOUR_DIGITALOCEAN_TOKEN"
+digitalocean_droplet_image = "SERVERNAME"
+digitalocean_droplet_name = "SERVERNAME"
+// SPEC SERVER
+digitalocean_droplet_region = "REGION" \\ https://www.digitalocean.com/docs/platform/availability-matrix/
+digitalocean_droplet_size = "s-1vcpu-1gb" \\ https://www.digitalocean.com/pricing/
+// ASSIGN SSH KEY
+digitalocean_ssh_key = "YOUR_DIGITALOCEAN_SSH_KEY"
+digitalocean_droplet_backup = false

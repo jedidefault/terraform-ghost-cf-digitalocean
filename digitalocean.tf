@@ -2,7 +2,7 @@ provider "digitalocean" {
   token = var.digitalocean_token
 }
 
-data "digitalocean_ssh_key" "ghost_ssh_key" {
+data "digitalocean_ssh_key" "ewok_ssh_key" {
   name = var.digitalocean_ssh_key
 }
 
