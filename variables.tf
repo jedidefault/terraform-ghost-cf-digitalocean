@@ -3,15 +3,15 @@ variable "digitalocean_token" {
   type = string
 }
 
-// @see: https://marketplace.digitalocean.com/apps/ghost
+// @see: https://marketplace.digitalocean.com/apps/ghost-18-04
 variable "digitalocean_droplet_image" {
   type = string
-  default = "etcsec-ghost-webserver"
+  default = "ghost-18-04-20-04"
 }
 
 variable "digitalocean_droplet_name" {
   type = string
-  default = "etcsec-ghost-webserver"
+  default = "etcsecghost-18-04"
 }
 
 // @see: https://developers.digitalocean.com/documentation/v2/#regions
