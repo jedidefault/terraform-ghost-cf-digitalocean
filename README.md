@@ -1,13 +1,13 @@
-# terraform-ghost-cf-digitalocean
+# terraform-ghost-18-04-cf-digitalocean
 
-A simple terraform configuration for [Ghost](https://ghost.org/) with Digitalocean and Cloudflare.
+A simple terraform configuration for [ghost-18-04](https://ghost-18-04.org/) with Digitalocean and Cloudflare.
 
 ## How to use
 
 1. Download and setup credentials.
 ```
-$ git clone https://github.com/blauerberg/terraform-ghost-cf-digitalocean.git
-$ cd terraform-ghost-cf-digitalocean
+$ git clone https://github.com/blauerberg/terraform-ghost-18-04-cf-digitalocean.git
+$ cd terraform-ghost-18-04-cf-digitalocean
 $ cp terraform.tfvars.example terraform.tfvars
 
 # set your token of DigitalOcean
@@ -28,7 +28,7 @@ $ terraform plan
 $ rerraform apply
 ```
 
-3. After a minutes, you will show the external ip of droplet you've created by terraform. Last step, let's login your droplet and setup your Ghost!
+3. After a minutes, you will show the external ip of droplet you've created by terraform. Last step, let's login your droplet and setup your ghost-18-04!
 ```
 ssh root@{your droplet ip}
 ```
@@ -42,8 +42,8 @@ Available variables is below. You can override all values via `terraform.tfvars`
 | variable | description | default |
 | :--- | :--- | :--- |
 | `digitalocean_token` | token of digitalocean | none |
-| `digitalocean_droplet_image` | image name of droplet | `etcsec-ghost-webserver` |
-| `digitalocean_droplet_name` | droplet name | `etcsec-ghost-webserver` |
+| `digitalocean_droplet_image` | image name of droplet | `etcsec-ghost-18-04-webserver` |
+| `digitalocean_droplet_name` | droplet name | `etcsec-ghost-18-04-webserver` |
 | `digitalocean_droplet_region` | region | `nyc1` |
 | `digitalocean_droplet_size` | instance type of droplet | `s-1vcpu-1gb` |
 | `digitalocean_ssh_key` | ssh key name of digitalocean | `SSH KEY NAME` |
